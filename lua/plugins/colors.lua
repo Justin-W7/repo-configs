@@ -1,5 +1,13 @@
 return {
-	--[[ gruvbox
+    --[[kanagawa
+    {
+        "rebelot/kanagawa.nvim",
+        priority = 1000,
+        init = function()
+            vim.cmd.colorscheme("kanagawa")
+        end,
+    },]]
+    --[[ gruvbox
 	{
 		"ellisonleao/gruvbox.nvim",
 		priority = 1000,
@@ -7,18 +15,18 @@ return {
 			vim.cmd.colorscheme("gruvbox")
 		end,
 	},]]
-	--[[ lackluster
-	{
-		"slugbyte/lackluster.nvim",
-		priority = 1000,
-		init = function()
-			vim.cmd.colorscheme("lackluster-hack")
-			-- vim.cmd.colorscheme("lackluster-hack") -- my favorite
-			-- vim.cmd.colorscheme("lackluster-mint")
-		end,
-	},]]
+    --[[ lackluster
+    {
+        "slugbyte/lackluster.nvim",
+        priority = 1000,
+        init = function()
+            vim.cmd.colorscheme("lackluster-mint")
+            -- vim.cmd.colorscheme("lackluster-hack") -- my favorite
+            -- vim.cmd.colorscheme("lackluster-mint")
+        end,
+    },]]
 
-	--[[Base16 Black Metal
+    --[[Base16 Black Metal
 	{
 		"metalelf0/base16-black-metal-scheme",
 		priotiry = 1000,
@@ -27,16 +35,16 @@ return {
 		end,
 	},]]
 
-	-- vague 2k
-	{
-		"vague2k/vague.nvim",
-		priority = 1000,
-		init = function()
-			vim.cmd.colorscheme("vague")
-		end,
-	},
+    -- vague 2k
+    {
+        "vague2k/vague.nvim",
+        priority = 1000,
+        init = function()
+            vim.cmd.colorscheme("vague")
+        end,
+    },
 
-	--[[ gruvsquirrel
+    --[[ gruvsquirrel
 	{
 		"mikesmithgh/gruvsquirrel.nvim",
 		priority = 1000,
@@ -45,7 +53,7 @@ return {
 		end,
 	},]]
 
-	--[[ kanagawa-paper
+    --[[ kanagawa-paper
 	{
 		"sho-87/kanagawa-paper.nvim",
 		lazy = false,
