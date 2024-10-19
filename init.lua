@@ -17,7 +17,6 @@ vim.opt.rtp:prepend(lazypath)
 
 -- [[ MAPPINGS AND VIM SETTINGS ]]
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.opt.nu = true
@@ -45,12 +44,3 @@ require("lazy").setup({
     install = { colorscheme = { "colors" } },
     checker = { enabled = true },
 })
-
--- Setup Mason
-require("mason").setup({
-    { import = "plugins.mason" },
-})
---[[require("mason-lspconfig").setup({
-	ensure_installed = {},
-
-}) ]]
